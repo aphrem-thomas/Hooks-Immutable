@@ -1,0 +1,19 @@
+{
+  "name": "hooks-immutable",
+  "version": "1.0.0",
+  "description": "Learning react hooks and immutable js with scss and testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aphrem-thomas/Hooks-Immutable.git"
+  },
+  "author": "aphrem-thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aphrem-thomas/Hooks-Immutable/issues"
+  },
+  "homepage": "https://github.com/aphrem-thomas/Hooks-Immutable#readme"
+}
