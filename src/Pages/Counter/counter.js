@@ -26,7 +26,7 @@ class Counter extends Component {
 }
 
 
-export default connect(({ count })=>{
-    console.log(count)
-    return({counter:count.counter})
+export default connect((state,ownProps)=>{
+    console.log(state.root)
+    return({counter:state.root.counter})
 })(Counter)
