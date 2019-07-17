@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux';
 import {asyncInc,increment} from '../../actions/actions';
+import {Map,List} from 'immutable';
 
 class Counter extends Component {
     constructor(props){
@@ -28,5 +29,5 @@ class Counter extends Component {
 
 export default connect((state,ownProps)=>{
     console.log(state.root)
-    return({counter:state.root.counter})
+    return({counter:state.root.getIn(['counter'])})
 })(Counter)

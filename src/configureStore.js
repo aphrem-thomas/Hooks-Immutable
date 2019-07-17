@@ -8,7 +8,7 @@ const configureStore = () => {
     const reduxExtension =  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
     const middleWares = sagaMiddleware;
     const reducer = combineReducers({root:rootReducer});
-    const store = createStore(reducer,compose(applyMiddleware(middleWares)));
+    const store = createStore(reducer,compose(applyMiddleware(middleWares),reduxExtension));
     sagaMiddleware.run(rootSaga);
     return store;
 }
