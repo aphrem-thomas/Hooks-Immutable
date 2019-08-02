@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux';
 import {asyncInc,increment} from '../../actions/actions';
-
+import styles from './counter.scss';
 class Counter extends Component {
     constructor(props){
         super(props);
@@ -15,7 +15,7 @@ class Counter extends Component {
         return (
             <div>
                 {/* <div className={"value"}> {this.props.counter}</div> */}
-               <div className={"buttons"}>
+               <div className={styles.buttons}>
                     <button onClick={this.increment}>Increment</button>
                     {this.props.counter}
                </div>
