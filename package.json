@@ -4,7 +4,7 @@
   "description": "Learning react hooks and immutable js with scss and testing",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "webpack-dev-server --hot --mode development --port 8086",
     "build": "webpack --mode production"
   },
