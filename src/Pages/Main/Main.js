@@ -8,7 +8,7 @@ export default function Main() {
         <div>
             {"main component"}
             <h1>{`age is ${age}`}</h1>
-            <button onClick={()=>incAge(age+1)}>{'+'}</button>
+            <button onClick={()=>incAge(prevAge=>prevAge+1)}>{'+'}</button>
         </div>
     )
 }
